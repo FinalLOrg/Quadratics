@@ -19,7 +19,7 @@ QuadraticEquation::QuadraticEquation(const std::string& str)
         throw std::runtime_error(std::string{ "Quadratic equation is missing its quadratic term!" });
 }
 
-void QuadraticEquation::Factorize(std::ostream& out, bool printSteps)
+void QuadraticEquation::Factor(std::ostream& out, bool printSteps)
 {
     // identify absolute, linear and quadratic term
     // calculate discriminant

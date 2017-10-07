@@ -5,7 +5,6 @@
 
 #include "QuadraticEquation.h"
 
-#define DBUG
 int main(int argc, char* argv[])
 {
     bool quit = false;
@@ -35,12 +34,12 @@ int main(int argc, char* argv[])
         QuadraticEquation eq2({ "-x^2+6=-3x^2+7x" });
         QuadraticEquation eq3({ "x^2+4x+5=0" });
         std::cout << "Was given an equation: \"" << eq2 << "\"" << std::endl;
-        eq2.Factorize(std::cout);
+        eq2.Factor(std::cout);
         std::cout << "Was given an equation: \"" << eq3 << "\"" << std::endl;
-        eq3.Factorize(std::cout);
+        eq3.Factor(std::cout);
 #endif
         std::cout << "Was given an equation: \"" << equation << "\"" << std::endl;
-        equation.Factorize(std::cout);
+        equation.Factor(std::cout);
     }
     return 0;
 }

@@ -6,7 +6,7 @@ class QuadraticEquation : public Equation
 public:
     QuadraticEquation(const std::string& str);
     // Factorizes the equation and prints the steps into out
-    void Factorize(std::ostream& out, bool printSteps = true);
+    void Factor(std::ostream& out, bool printSteps = true);
 private:
     using Rational = Term::CoeffType;
     std::string GetFactorFromRoot(const Rational& root);
